@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content color="dark">
   <!-- Header -->
   <ion-header collapse="undefined">
     <ion-toolbar color="transparent">
@@ -11,7 +11,7 @@
   <ion-row>
     <ion-col size="12">
       <ion-avatar>
-        <img src="/assets/img/avatar.jpg" />
+        <img src="./assets/img/avatar.jpg" />
       </ion-avatar>
       <ion-title>
         <code>
@@ -22,7 +22,8 @@
       <code class="contact">
         <ion-icon name="mail"></ion-icon> Email:anantasak.non@pcru.ac.th, <ion-icon name="call"></ion-icon>Tel:094-251-0015
         <ion-icon name="logo-github"></ion-icon> Github: <a href="https://github.com/anantasak-pcru">anantasak-pcru</a>, <a href="https://github.com/mengxyz">mengxyz</a>, <a href="https://github.com/Pidsamhai">Pidsamhai</a>
-    </code>
+        <ion-icon name="logo-facebook"></ion-icon> Facebook: <a href="https://fb.com/meng.anantasak">Anantasak Meng</a>
+      </code>
     </pre>
     </ion-col>
   </ion-row>
@@ -34,31 +35,36 @@
     <code class="info">
 
       <span class="header" >Personal Detail</span> 
-        
-        Name:             Anantasak Nonkhunthod
-        Age:              21 years
-        Date of Birth:    11 Aug 1999
-        Nationality:      Thai
-        Religion:         -
-        Language:         Thai
+          
+          Name:             Anantasak Nonkhunthod
+          Age:              21 years
+          Date of Birth:    11 Aug 1999
+          Nationality:      Thai
+          Religion:         -
+          Language:         Thai
 
 
       <span class="header" >Education</span> 
+
+          Kindergarten:     Ban Kokkruad School
+          Grade 1 - 6:      Ban Kokkruad School
+          Grade 7-12:       Subbonwitthayakom School 
+          B. Sc.:           Phetchabun Rajabhat University (Computer Science) (Inprogress)
 
 
       <span class="header">Skill</span>
       
       Programing langauge   poor   fair     good    excellent
 
-          - python         <span class="radio"> ๏    ๐     ๐      ๐</span>  
-          - kotlin         <span class="radio"> ๏    ๐     ๐      ๐</span>  
-          - java           <span class="radio"> ๏    ๐     ๐      ๐</span>  
-          - java script    <span class="radio"> ๏    ๐     ๐      ๐</span>  
-          - c              <span class="radio"> ๏    ๐     ๐      ๐</span>  
-          - php            <span class="radio"> ๏    ๐     ๐      ๐</span>  
-          - sql            <span class="radio"> ๏    ๐     ๐      ๐</span>  
-          - VB.NET         <span class="radio"> ๏    ๐     ๐      ๐</span>  
-          - C#             <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - python         <span class="radio"> ๐    <span class="selected">๏</span>     ๐      ๐</span>  
+          - kotlin         <span class="radio"> ๐    <span class="selected">๏</span>     ๐      ๐</span>  
+          - java           <span class="radio"> ๐    <span class="selected">๏</span>     ๐      ๐</span>  
+          - java script    <span class="radio"> <span class="selected">๏</span>    ๐     ๐      ๐</span>  
+          - c              <span class="radio"> <span class="selected">๏</span>    ๐     ๐      ๐</span>  
+          - php            <span class="radio"> ๐    <span class="selected">๏</span>     ๐      ๐</span>  
+          - sql            <span class="radio"> ๐    <span class="selected">๏</span>     ๐      ๐</span>  
+          - VB.NET         <span class="radio"> ๐    <span class="selected">๏</span>     ๐      ๐</span>  
+          - C#             <span class="radio"> ๐    <span class="selected">๏</span>     ๐      ๐</span>  
       
       <span class="header">Framework & Libraies</span>
 
@@ -73,7 +79,7 @@
           Scrcpy Gui( Windows VB.NET ):
 
           GiftShop ( Android App ):
-              - Java    version
+              - <span class="pointer" (click)="gotoGiftshop()">Java    version</span> 
               - Kotlin  version
           
               Viu vdo download ( Python cosole ):
@@ -93,21 +99,9 @@
           - ทำงานเอกสารไม่ค่อยเก่ง แต่ก็พอทำได้
     </code>
   </pre>
-
-  <ion-col size="12">
-    <ion-button (click)="goMyprofile()" color="primary">Primary</ion-button>
-  </ion-col>
-
   <!-- End Content -->
 
 </ion-content>
 
 <!-- Footer -->
-<ion-footer>
-  <ion-toolbar color="dark">
-    <code> 
-      <p>Page is Develop by Ionic 4 Angular 8</p>
-      <p>Copy right Anantasak 2020</p>
-    </code>
-  </ion-toolbar>
-</ion-footer>
+<app-custom-footer></app-custom-footer>

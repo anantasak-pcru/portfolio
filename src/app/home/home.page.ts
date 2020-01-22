@@ -19,4 +19,8 @@ export class HomePage implements OnInit {
       this.router.navigate(["/myprofile"])
   }
 
+  gotoGiftshop(){
+    this.router.navigate(["/giftshop-java"])
+  }
+
 }

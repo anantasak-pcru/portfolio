@@ -27,3 +27,35 @@
 
 //prismjs
 @import "~prismjs/themes/prism-okaidia.css";
+
+ion-footer {
+    font-size: 1.2em;
+    color: white;
+    p {
+        text-align: center;
+        a{
+            text-decoration: none;
+            text-decoration-color: white;
+            ion-icon{
+                color: white;
+            }
+        }
+    }
+
+    ion-toolbar {
+        background-color: red;
+    }
+}
+
+ion-header{
+    color: white;
+    font-weight: 600;
+    ion-toolbar{
+        ion-buttons{
+            cursor: pointer;
+        }
+        ion-buttons:hover{
+            color: whitesmoke;
+        }
+    }
+}

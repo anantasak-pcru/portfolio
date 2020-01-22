@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'myprofile',
     loadChildren: () => import('./myprofile/myprofile.module').then( m => m.MyprofilePageModule)
   },
+  {
+    path: 'giftshop-java',
+    loadChildren: () => import('./giftshop-java/giftshop-java.module').then( m => m.GiftshopJavaPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,21 @@
+video{
+    position: sticky;
+    margin: 10px 10px 10px 10px;
+    left: 50%;
+}
+ion-header{
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+    font-size: 1.5em;
+}
+ion-col.center{
+    position: relative;
+    app-g-button{
+        position: relative;
+        left: 50%;
+        right: 50%;
+    }
+}
