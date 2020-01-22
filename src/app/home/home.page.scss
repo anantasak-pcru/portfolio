@@ -1,41 +1,75 @@
-ion-content {
-    --background: url('/../../../assets/img/cover.jpg') no-repeat center center / cover;
-  }
+// ion-content {
+//     --background: url('/../../../assets/img/cover.jpg') no-repeat center center / cover;
+// }
 
 ion-footer {
-    p{
+    p {
         text-align: center;
     }
-    ion-toolbar{
-    background-color: red;
-   }
-  }
 
-ion-header{
+    ion-toolbar {
+        background-color: red;
+    }
+}
+
+code{
+    .header{
+        text-decoration: underline;
+        font-weight: 800;
+        color: yellow;
+    }
+    .red{
+        color: red;
+    }
+    .green{
+        color: greenyellow;
+    }
+    .radio{
+        font-size: 1.5em;
+    }
+}
+
+code.contact{
+    font-size: 1.3em;
+    a{
+        text-decoration-color: white;
+        color: white;
+    }
+}
+
+code.info{
+    font-size: 1.2em;
+}
+
+ion-header {
     color: white;
 }
 
-ion-avatar{
+ion-avatar {
     left: 50%;
     right: 50%;
     width: 100%;
     height: 100%;
-    img{
+
+    img {
         width: 200px;
         height: 200px;
-    } 
+    }
 }
-ion-row{
+
+ion-row {
     display: block;
     align-items: center;
     text-align: center;
-    ion-title{
+
+    ion-title {
         text-align: center;
         color: white;
         font-weight: 800;
         font-size: 1.5em;
     }
-    p{
+
+    p {
         position: relative;
         color: white;
         font-size: 1.5em;
@@ -43,12 +77,15 @@ ion-row{
     }
 }
 
-table{
-    color: white;
-    text-align: center;
-    border: solid 1px white;
-    font-size: 1.3em;
-    th,tr,td{
-        border: solid 1px white;
-    }
-}
+// table {
+//     color: white;
+//     text-align: center;
+//     border: solid 1px white;
+//     font-size: 1.3em;
+
+//     th,
+//     tr,
+//     td {
+//         border: solid 1px white;
+//     }
+// }

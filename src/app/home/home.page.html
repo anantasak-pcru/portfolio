@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content color="dark">
   <!-- Header -->
   <ion-header collapse="undefined">
     <ion-toolbar color="transparent">
@@ -13,38 +13,90 @@
       <ion-avatar>
         <img src="../assets/img/avatar.jpg" />
       </ion-avatar>
-      <ion-title>Myname is Anantasak Nonkhunthod</ion-title>
-      <p>Myname is Anantasak Nonkhunthod</p>
+      <ion-title>
+        <code>
+        Anantasak Nonkhunthod
+      </code>
+      </ion-title>
+      <pre>
+      <code class="contact">
+        <ion-icon name="mail"></ion-icon> Email:anantasak.non@pcru.ac.th, <ion-icon name="call"></ion-icon>Tel:094-251-0015
+        <ion-icon name="logo-github"></ion-icon> Github: <a href="https://github.com/anantasak-pcru">anantasak-pcru</a>, <a href="https://github.com/mengxyz">mengxyz</a>, <a href="https://github.com/Pidsamhai">Pidsamhai</a>
+    </code>
+    </pre>
     </ion-col>
-    <ion-col size="12">
-
-      <table style="width:100%">
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table>
-
-    </ion-col>
-    <ion-col size="12">
-      <ion-button (click)="goMyprofile()" color="primary">Primary</ion-button>
-    </ion-col>
-    
   </ion-row>
 
 
 
+
+  <pre>
+    <code class="info">
+
+      <span class="header" >Personal Detail</span> 
+        
+        Name:             Anantasak Nonkhunthod
+        Age:              21 years
+        Date of Birth:    11 Aug 1999
+        Nationality:      Thai
+        Religion:         -
+        Language:         Thai
+
+
+      <span class="header" >Education</span> 
+
+
+      <span class="header">Skill</span>
+      
+      Programing langauge   poor   fair     good    excellent
+
+          - python         <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - kotlin         <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - java           <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - java script    <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - c              <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - php            <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - sql            <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - VB.NET         <span class="radio"> ๏    ๐     ๐      ๐</span>  
+          - C#             <span class="radio"> ๏    ๐     ๐      ๐</span>  
+      
+      <span class="header">Framework & Libraies</span>
+
+          Laravel 6,Angular(Basic),Ionic4(Basic),Sematic UI ,Bootstrap
+
+      <span class="header">Tool</span>
+      
+          Git version control,Vs code, Android Studio
+      
+      <span class="header">Works</span>
+
+          Scrcpy Gui( Windows VB.NET ):
+
+          GiftShop ( Android App ):
+              - Java    version
+              - Kotlin  version
+          
+              Viu vdo download ( Python cosole ):
+              - V1
+              - V2
+
+      <span class="header green">Strength</span>
+
+          - เป็นคนเรียนรู้ค่อนข้างไว
+          - จริงจังกับงานที่ทำ
+          - พยายามเรียนรู้ตลอดเวลา หากมีเวลาว่าง
+      
+      <span class="header red">Weak</span>
+
+          - เป็นคนพูดไม่ค่อยเก่ง
+          - หน้าตาเหมือนคนหาติดเศร้าไปหน่อย
+          - ทำงานเอกสารไม่ค่อยเก่ง แต่ก็พอทำได้
+    </code>
+  </pre>
+
+  <ion-col size="12">
+    <ion-button (click)="goMyprofile()" color="primary">Primary</ion-button>
+  </ion-col>
 
   <!-- End Content -->
 
@@ -53,7 +105,9 @@
 <!-- Footer -->
 <ion-footer>
   <ion-toolbar color="dark">
-    <p>Page is Develop by Ionic 4 Angular 8</p>
-    <p>Copy right Anantasak 2020</p>
+    <code> 
+      <p>Page is Develop by Ionic 4 Angular 8</p>
+      <p>Copy right Anantasak 2020</p>
+    </code>
   </ion-toolbar>
 </ion-footer>
