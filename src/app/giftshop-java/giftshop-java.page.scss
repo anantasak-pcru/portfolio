@@ -1,21 +1,15 @@
-video{
-    position: sticky;
-    margin: 10px 10px 10px 10px;
-    left: 50%;
-}
-ion-header{
+ion-header {
     text-align: center;
 }
 
-.info{
-    text-align: center;
-    font-size: 1.5em;
-}
+
 ion-col.center{
-    position: relative;
-    app-g-button{
-        position: relative;
-        left: 50%;
-        right: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 740px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    app-custom-footer{
+        font-size: 0.6em;
     }
 }

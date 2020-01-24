@@ -31,12 +31,15 @@
 ion-footer {
     font-size: 1.2em;
     color: white;
+
     p {
         text-align: center;
-        a{
+
+        a {
             text-decoration: none;
             text-decoration-color: white;
-            ion-icon{
+
+            ion-icon {
                 color: white;
             }
         }
@@ -46,16 +49,33 @@ ion-footer {
         background-color: red;
     }
 }
-
-ion-header{
+ion-header {
     color: white;
     font-weight: 600;
-    ion-toolbar{
-        ion-buttons{
+
+    ion-toolbar {
+        ion-buttons {
             cursor: pointer;
         }
-        ion-buttons:hover{
+
+        ion-buttons:hover {
             color: whitesmoke;
         }
     }
+}
+
+@media screen and (max-width: 480px) {
+    app-custom-footer {
+        font-size: 0.6em;
+    }
+
+    * {
+        font-size: 0.95em;
+
+        img.avimg {
+            width: 200px !important;
+        }
+    }
+
+
 }

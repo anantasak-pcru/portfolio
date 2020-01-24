@@ -2,9 +2,10 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/cor
 import {CustomFooterComponent} from '../../app/components/custom-footer/custom-footer.component'
 import { CommonModule } from '@angular/common';
 import { GButtonComponent } from './g-button/g-button.component';
+import { InfoComponent } from './info/info.component';
 @NgModule({
-    declarations: [CustomFooterComponent,GButtonComponent],
-    exports: [CustomFooterComponent,GButtonComponent],
+    declarations: [CustomFooterComponent,GButtonComponent,InfoComponent],
+    exports: [CustomFooterComponent,GButtonComponent,InfoComponent],
     imports: [ CommonModule ],
     schemas: [ CUSTOM_ELEMENTS_SCHEMA]
 })

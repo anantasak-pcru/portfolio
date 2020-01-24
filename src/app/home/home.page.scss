@@ -1,91 +1,98 @@
-ion-content {
-    --background: url('/../../../assets/img/cover.jpg') no-repeat center center / cover;
-}
-
-code{
-    .header{
+code {
+    .header {
         text-decoration: underline;
         font-weight: 800;
         color: yellow;
     }
-    .red{
+
+    .red {
         color: red;
     }
-    .green{
+
+    .green {
         color: greenyellow;
     }
-    .radio{
+
+    .radio {
         font-size: 1.5em;
     }
 }
 
-code.contact{
+code.contact {
     font-size: 1.3em;
-    a{
+    a {
         text-decoration-color: white;
         color: white;
     }
 }
 
-code.info{
+ion-col.contact{
+    display: flex;
+    justify-content: center;
+}
+ion-col.personal{
+    display: block;
+    //justify-content: left;
+}
+dd{
+    white-space: pre-wrap;
+    margin-left: 20px;
+    font-family: monospace,monospace;
+    .header {
+        text-decoration: underline;
+        font-weight: 800;
+        color: yellow;
+    }
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: greenyellow;
+    }
+
+    .radio {
+        font-size: 1.5em;
+    }
+}
+dd.p2{
+    margin-left: 40px;
+}
+dd.p3{
+    margin-left: 60px;
+}
+code.info {
     font-size: 1.2em;
+}
+ion-col.info {
+    display: flex;
+    justify-content: left;
 }
 
 ion-header {
     color: white;
 }
 
-ion-avatar {
-    left: 50%;
-    right: 50%;
-    width: 100%;
-    height: 100%;
-    img,ion-img {
-        width: 200px;
-        height: 200px;
-    }
+ion-col.avatar {
+    display: flex;
+    justify-content: center;
 }
 
-span.pointer{
+img.av-img {
+    width: 100px !important;
+}
+
+img.av-img {
+    height: auto !important;
+}
+
+span.pointer {
     cursor: pointer;
     text-decoration: underline;
     font-style: italic;
     font-weight: 800;
 }
 
-span.selected{
+span.selected {
     color: greenyellow;
 }
-
-ion-row {
-    display: block;
-    align-items: center;
-    text-align: center;
-
-    ion-title {
-        text-align: center;
-        color: white;
-        font-weight: 800;
-        font-size: 1.5em;
-    }
-
-    p {
-        position: relative;
-        color: white;
-        font-size: 1.5em;
-        font-weight: 800;
-    }
-}
-
-// table {
-//     color: white;
-//     text-align: center;
-//     border: solid 1px white;
-//     font-size: 1.3em;
-
-//     th,
-//     tr,
-//     td {
-//         border: solid 1px white;
-//     }
-// }
