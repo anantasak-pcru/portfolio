@@ -8,7 +8,7 @@ import { RouterModule, Router } from '@angular/router';
 
 export class HomePage implements OnInit {
 
-  private personal_detail =
+  personal_detail =
     [
       "Name:             Anantasak Nonkhunthod",
       "Age:              21 years",
@@ -18,7 +18,7 @@ export class HomePage implements OnInit {
       "Language:         Thai",
     ]
 
-  private education =
+  education =
     [
       "Kindergarten:     Ban Kokkruad School",
       "Grade 1 - 6:      Ban Kokkruad School",
@@ -26,10 +26,6 @@ export class HomePage implements OnInit {
       "B. Sc.:           Phetchabun Rajabhat University (Computer Science) (Inprogress)",
     ]
 
-  private skill =
-    [
-      
-    ]
 
   constructor(
     private router: Router,
