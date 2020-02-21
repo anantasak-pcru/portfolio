@@ -49,6 +49,7 @@ ion-footer {
         background-color: red;
     }
 }
+
 ion-header {
     color: white;
     font-weight: 600;
@@ -64,6 +65,18 @@ ion-header {
     }
 }
 
+ion-col.btn-center {
+    display: flex;
+    justify-content: center;
+    ion-button {
+        align-self: center;
+    }
+}
+ion-col.content-info {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 @media screen and (max-width: 480px) {
     app-custom-footer {
         font-size: 0.6em;
@@ -72,10 +85,17 @@ ion-header {
     * {
         font-size: 0.95em;
 
-        img.avimg {
-            width: 200px !important;
+        // img.avimg {
+        //     width: 200px !important;
+        // }
+    }
+
+    ion-col.center {
+        ion-button {
+            display: none;
         }
     }
 
 
 }
+

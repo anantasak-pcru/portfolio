@@ -5,16 +5,20 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: 'myprofile',
-    loadChildren: () => import('./myprofile/myprofile.module').then( m => m.MyprofilePageModule)
+    loadChildren: () => import('./page/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'giftshop-java',
-    loadChildren: () => import('./giftshop-java/giftshop-java.module').then( m => m.GiftshopJavaPageModule)
+    loadChildren: () => import('./page/giftshop-java/giftshop-java.module').then( m => m.GiftshopJavaPageModule)
   },
+  {
+    path: 'viu',
+    loadChildren: () => import('./page/viu/viu.module').then( m => m.ViuPageModule)
+  },
+  // {
+  //   path: 'laravel',
+  //   loadChildren: () => import('./page/laravel/laravel.module').then( m => m.LaravelPageModule)
+  // }
 ];
 
 @NgModule({

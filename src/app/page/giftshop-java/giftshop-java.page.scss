@@ -1,0 +1,39 @@
+ion-header {
+    text-align: center;
+}
+
+
+ion-col.center {
+    display: flex;
+    justify-content: center;
+    ion-button {
+        height: 100%;
+        align-self: center;
+        --background: rgba(255, 255, 255, 0);
+        --background-hover:rgba(190, 190, 190, 0);
+    }
+}
+
+ion-slide {
+    img {
+        width: 312px;
+        height: auto;
+    }
+}
+
+ion-slides {
+    width: 312px;
+    height: auto;
+    --bullet-background:black;
+    --bullet-background-active: white;
+}
+.swiper-pagination-bullet-active{
+    width: 15px;
+    height: 15px;
+}
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 740px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    app-custom-footer {
+        font-size: 0.6em;
+    }
+}

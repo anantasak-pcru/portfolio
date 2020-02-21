@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { GiftshopJavaPageRoutingModule } from './giftshop-java-routing.module';
 
 import { GiftshopJavaPage } from './giftshop-java.page';
-import { ComponentsModule } from '../components/component.module';
+import { ComponentsModule } from '../../components/component.module';
 
 @NgModule({
   imports: [

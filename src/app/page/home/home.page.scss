@@ -79,10 +79,7 @@ ion-col.avatar {
 }
 
 img.av-img {
-    width: 100px !important;
-}
-
-img.av-img {
+    width: 300px !important;
     height: auto !important;
 }
 
@@ -95,4 +92,12 @@ span.pointer {
 
 span.selected {
     color: greenyellow;
+}
+
+@media screen and (max-width: 480px) {
+    img.av-img {
+        width: 150px !important;
+        height: auto !important;
+    }
+    
 }

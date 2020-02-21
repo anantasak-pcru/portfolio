@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MyprofilePage } from './myprofile.page';
+import { LaravelPage } from './laravel.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: MyprofilePage
+    component: LaravelPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class MyprofilePageRoutingModule {}
+export class LaravelPageRoutingModule {}

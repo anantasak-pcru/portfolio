@@ -1,0 +1,105 @@
+<ion-content color="dark">
+  <!-- Header -->
+  <ion-header collapse="undefined">
+    <ion-toolbar color="transparent">
+      <ion-title>My Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Content -->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="avatar" size="12">
+        <!-- <ion-avatar> -->
+        <img class="av-img" src="./assets/img/profile.jpg" />
+        <!-- </ion-avatar> -->
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="contact">
+        <code class="contact">
+          <ion-icon name="mail"></ion-icon> Email:anantasak.non@pcru.ac.th <br>
+          <ion-icon name="call"></ion-icon>Tel:094-251-0015 <br>
+          <ion-icon name="logo-github"></ion-icon> Github: <a href="https://github.com/anantasak-pcru">anantasak-pcru</a>, 
+          <a href="https://github.com/mengxyz">mengxyz</a>, 
+          <a href="https://github.com/Pidsamhai">Pidsamhai</a><br>
+          <ion-icon name="logo-facebook"></ion-icon> Facebook: <a href="https://fb.com/meng.anantasak">Anantasak Meng</a>
+        </code>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="personal">
+        <dd><span class="header">Personal Detail</span></dd><br>
+        <dd *ngFor="let item of personal_detail" class="p2">{{item}}</dd>
+        <br>
+        <dd><span class="header">Education</span></dd><br>
+        <dd *ngFor="let item of education" class="p2">{{item}}</dd>
+        <dd class="p2">Grade AVG: <a style="color:white" href="./assets/grade.pdf">3.09</a></dd>
+
+
+        <br>
+        <dd><span class="header">Skill</span></dd>
+        <pre>
+         <code style="white-space:pre-wrap;">
+    Programing langauge   ( <span style="color: red;">poor</span>  <span style="color: orange;">fair</span>  <span style="color: yellow;">good</span>   <span style="color: greenyellow;">excellent</span>)
+          - python <span style="color: orange;">(fair)</span>
+          - kotlin <span style="color: orange;">(fair)</span>        
+          - java <span style="color: orange;">(fair)</span>         
+          - java script <span style="color: orange;">(fair)</span>
+          - c <span style="color: orange;">(fair)</span>             
+          - php <span style="color: orange;">(fair)</span>           
+          - sql <span style="color: orange;">(fair)</span>           
+          - VB.NET <span style="color: orange;">(fair)</span>        
+          - C# <span style="color: orange;">(fair)</span>             
+         </code>
+       </pre>
+        <dd><span class="header">Framework & Libraies</span></dd><br>
+        <dd class="p2">Laravel 6,Angular(Basic),Ionic4(Basic),Sematic UI ,Bootstrap</dd><br>
+
+        <dd><span class="header">Tools</span></dd><br>
+        <dd class="p2">Git version control,Vs code, Android Studio</dd><br>
+
+        <dd><span class="header">Works</span></dd><br>
+        <dd class="p2">Scrcpy Gui( Windows VB.NET ):</dd>
+        <dd class="p3">-  <a style="color:white;" href="https://github.com/Pidsamhai/scrcpy_gui">Github Link</a></dd><br>
+
+        <dd class="p2">GiftShop ( Android App ):</dd>
+        <dd class="p3">- <span class="pointer" (click)="gotoPage('giftshop-java')">Java version</span> </dd>
+        <dd class="p3">- <a style="color:white;" href="https://github.com/Pidsamhai/GiftShop-Kotlin-Edition">Kotlin version</a></dd><br>
+
+        <dd class="p2">Viu vdo download ( Python cosole ):</dd>
+        <dd class="p3"><span (click)="gotoPage('viu')" class="pointer">- V1</span></dd>
+        <dd class="p3"><span (click)="gotoPage('viu',2)" class="pointer">- V2</span></dd><br>
+
+        <dd><span class="header green">Strength</span></dd>
+        <pre style="margin: 0px;padding: 0px;">
+        <code style="margin: 0px;padding: 0px;">
+      - เป็นคนเรียนรู้ค่อนข้างไว
+      - จริงจังกับงานที่ทำ
+      - พยายามเรียนรู้ตลอดเวลา หากมีเวลาว่าง
+      - ไฟเเรง
+        </code>
+      </pre><br>
+
+        <dd><span class="header red">Weak</span></dd>
+        <pre style="margin: 0px;padding: 0px;">
+        <code style="margin: 0px;padding: 0px;">
+      - เป็นคนพูดไม่ค่อยเก่ง
+      - ประสบการการทำงานยังน้อยมาก
+        </code>
+      </pre>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <!-- End Content -->
+
+</ion-content>
+
+<!-- Footer -->
+<app-custom-footer></app-custom-footer>

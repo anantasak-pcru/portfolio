@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Router } from '@angular/router';
+import { RouterModule, Router, NavigationExtras } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -35,12 +35,18 @@ export class HomePage implements OnInit {
 
   }
 
-  goMyprofile() {
-    this.router.navigate(["/myprofile"])
-  }
-
-  gotoGiftshop() {
-    this.router.navigate(["/giftshop-java"])
+  gotoPage(page:string,version:number = null) {
+    let navigateExtras:NavigationExtras = {
+      queryParams:{
+        v:version
+      }
+    }
+    // console.log(version);
+    
+    //if(version != null)
+      this.router.navigate([`/${page}`],navigateExtras)
+    // else
+    //   this.router.navigate([`/${page}`])
   }
 
 }

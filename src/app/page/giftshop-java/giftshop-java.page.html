@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <ion-buttons slot="start">
+      <ion-back-button text="Back" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Android Appclication Giftshop (Java version)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col class="center">
+
+        <ion-button (click)="preview()">
+          <ion-icon name="arrow-dropleft-circle"></ion-icon>
+        </ion-button>
+
+        <ion-col>
+          <ion-slides #myslider pager="true" [options]="slideOpts" (ionSlideDidChange)="change()">
+            <ion-slide *ngFor="let s of sliderOne.slidesItems">
+              <img *ngIf="!s.vdo; else elseBlock" width="321" height="516" src="{{s.src}}">
+              <ng-template #elseBlock>
+                <video width="321" height="516" autoplay controls loop>
+                  <source src="{{s.src}}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </ng-template>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+
+        <ion-button (click)="next()">
+          <ion-icon name="arrow-dropright-circle"></ion-icon>
+        </ion-button>
+
+      </ion-col>
+
+      <ion-col class="center">
+        <div style="width: max-content;">
+          <p style="font-size: 1.5em;text-align: center;">แอพนี้ที่จริงเป็นแแบบฝึกหัดในคลาสเป็นแพเเรกที่เขียนแอนดรอยเลย ทุ่มเทมาก</p>
+        <p style="font-size: 1.2em;">
+          โจทย์เป็นแอพของฝาก ไม่รู้ว่าจะเอาข้อมูลของฝากมาจากไหนเลยทำมันคล้ายๆตลาดให้ทุกคนมาลงขายได้ซ่ะเลย 
+        </p>
+        <pre>
+          <code style="font-size: 1.2em;">
+            ทำอไรได้บ้าง
+                - เพิ่ม ลบ แก้ไข สินค้าสำหรับสมาชิก
+                - ดูสินค้าสำหรับบุคคลทั่ว
+                - มีระบบสมาชิก
+            
+            โปรเจกนี้ใช้
+                - ภาษา Java
+                - api ทั้งหมด ใช้ firebase
+          </code>
+        </pre>
+        </div>
+        
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+
+
+</ion-content>
+
+<app-custom-footer></app-custom-footer>

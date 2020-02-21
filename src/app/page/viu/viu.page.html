@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <ion-buttons slot="start">
+      <ion-back-button text="Back" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>VIU VDO Download</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="c1" #content color="dark">
+
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col class="ion-justify-content-center" class="center">
+
+        <ion-col class="btn-center" class="ion-justify-content-center">
+          <ion-slides #myslider pager="true" [options]="opts">
+            <ion-slide *ngFor="let s of slides.slidesItems">
+              <img *ngIf="!s.vdo; else elseBlock" width="321" src="{{s.src}}">
+              <ng-template #elseBlock>
+                <video width="321" height="516" autoplay controls loop>
+                  <source src="{{s.src}}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </ng-template>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+
+        <ion-col class="btn-center">
+          <ion-button (click)="prev()">
+            <ion-icon name="arrow-dropleft-circle"></ion-icon>
+          </ion-button>
+
+
+          <ion-button (click)="next()">
+            <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+
+      </ion-col>
+
+      <ion-col class="content-info">
+        <p style="text-align: center;font-size: 1.7em;">
+          โปรเจกนี้สร้างจาก ภาษา python 3 ใช้เทคนิค webscrapping
+        </p>
+        <p style="font-size: 1.5em;">
+          ที่สร้างโปรเจกนี้เกิดจากเป็นคนชอบดูซีรี่มากแต่ไม่ค่อยมีเวลาเลยสมัคร VIP แล้วไม่คุ้ม
+          โหลดไว้ดูก็ไม่ได้ที่จริงมันมีเว็บโหลดเเหละแต่ไม่ชอบซับดับชอบซับของ viu บวกกับช่วงนี้ว่างๆ กับกำลังหัดเล่นภาษา
+          PYTHON
+          เลยลองเขียนโปรเเกรมนี้ขึ้นมา
+        </p>
+        <pre>
+          <code style="font-size: 1.5em;">
+          V1
+              - โหลดจาก url เท่านั้น
+              - ต้องก้อบปี้ url มาใส่ทุกครั้งตอนโหลด
+              - ไม่สามรถโหลด content file เช่น ffmpeg ต้องโหลดมาเอง
+
+          V2
+              - โหลดจาก content file เองได้
+              - เพิ่มการเก็บประวัติใส่ฐานข้อมูล ไม่ต้องกรอก url ใหม่ทุกครั้ง
+              - ปรับปรุงหน้าเมนูใหม่ จัดโครงสร้าง code ใหม่
+        </code>
+        </pre>
+        
+      </ion-col>
+
+    </ion-row>
+
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      
+      <ion-col size="3" >
+        <ion-card color="light" (click)="onClick('https://www.viu.com/ott/th/th/vod/94583/Reply-1988')">
+          <ion-card-header style="padding: 0;">
+            <img src="https://www.dooserieshd.com/wp-content/uploads/2019/04/Reply-1988-Subtitle-Indonesia-720x480-600x400.jpg" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <p>Reply-1988</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="3" >
+        <ion-card color="light" (click)="onClick('https://www.viu.com/ott/th/th/vod/24141/Pinocchio')">
+          <ion-card-header style="padding: 0;">
+            <img src="https://korea.tlcthai.com/wp-content/uploads/2014/10/10385396_308356246019148_7638905512312921764_n.jpg" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <p>Pinocchio</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="3" >
+        <ion-card color="light" (click)="onClick('https://www.viu.com/ott/th/th/vod/98373/Oh-My-Ghost')">
+          <ion-card-header style="padding: 0;">
+            <img src="https://www.dooserieshd.com/wp-content/uploads/2017/04/1111231-e1540187790975.jpg" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <p>oh my ghost</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="3" >
+        <ion-card color="light" (click)="onClick('https://www.viu.com/ott/th/th/vod/123692/Tunnel')">
+          <ion-card-header style="padding: 0;">
+            <img src="https://www.heavenofhorror.com/wp-content/uploads/2019/09/Tunnel-korean-series-netflix.jpg" alt="">
+          </ion-card-header>
+          <ion-card-content>
+            <p>Tunnel</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+  
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<app-custom-footer></app-custom-footer>

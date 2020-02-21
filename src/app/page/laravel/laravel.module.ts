@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MyprofilePageRoutingModule } from './myprofile-routing.module';
+import { LaravelPageRoutingModule } from './laravel-routing.module';
 
-import { MyprofilePage } from './myprofile.page';
+import { LaravelPage } from './laravel.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MyprofilePageRoutingModule
+    LaravelPageRoutingModule
   ],
-  declarations: [MyprofilePage]
+  declarations: [LaravelPage]
 })
-export class MyprofilePageModule {}
+export class LaravelPageModule {}

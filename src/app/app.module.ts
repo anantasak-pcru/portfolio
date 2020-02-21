@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { CustomStatic } from './static/custom-static';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,14 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
-    AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    CustomStatic
   ],
   bootstrap: [AppComponent]
 })
